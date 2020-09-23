@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block metadata %}
+<meta id="number" name="group" value="{{d}}">
+{% endblock %}
+{% block title %}
+First 5
+{% endblock %}
+
+{% block main %}
+<section class="learner-container">
+  {% for i in range(y) %}
+  <div class="learner-values">
+    <h4>{{ values[i] }}</h4>
+  </div>
+  <div class="learner-keys">
+    <h4>{{keys[i]}}</h4>
+  </div>
+  {% endfor %}
+</section>
+<nav class="incrementers">
+  <form class="incbuttons"
+  action=
+  {% if id == 2 %}
+  "{{url_for ('katafirst')}}"
+  {% else %}
+  "{{url_for ('hirafirst')}}"
+  {% endif %} method="post">
+    <button id="previous" name="group" value="" onclick="deincrement()" type="submit">Back</button>
+  </form>
+  <form class="incbuttons" action=
+  {% if id == 2 %}
+  "{{url_for ('katafirst')}}"
+  {% else %}
+  "{{url_for ('hirafirst')}}"
+  {% endif %} method="post">
+    <button id="next" name="group" value="" type="submit" onclick="increment()" >Next</button>
+  </form>
+</nav>
+
+<script>
+  function increment() {
+    let x = document.getElementById("number").getAttribute("value");
+    let y = parseInt(x) + 1;
+    document.getElementById("next").value = y;
+  };
+
+  function deincrement() {
+    let x = document.getElementById("number").getAttribute("value");
+    let y = parseInt(x) - 1;
+    document.getElementById("previous").value = y;
+  };
+</script>
+{% endblock %}

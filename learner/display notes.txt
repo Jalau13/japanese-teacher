@@ -1,0 +1,54 @@
+Display Properties in CSS
+
+Display: Block
+Takes up whole row in a HTMl document
+Other elements cannot be in the same row
+
+Display:In-line
+Takes up minimal space in document.  Other
+elements can be next to it in same row
+
+Display:Flexbox
+Flexbox container (Parent)
+-display:flex
+	flex-start
+	flex-end
+	justify-content (controls main axis)
+	align-content (controls cross axis)
+Flexbox Item
+	flex: (grow, shrink, basis)
+	flex-shrink
+	flex-grow
+	flex-basis
+	order
+
+Display: Grid
+Grid Container
+	display:grid
+	grid-template-columns:200px(1st column) 100px(2nd column size)
+OR	grid-template-columns: 2fr 1 fr (flexgrow)
+OR	grid-template-columns: repeat(4(columns(, 100px(size))
+(1strow)grid-template-rows:150px(tall)
+OR(all)	grid-auto-rows: 150px (all rows will be 150px unless otherwise specified)
+OR 	grid-auto-rows: minmax(150px, auto)  (150pxmin, auto grow to fit content for max)
+	
+	grid-gap: 20px (gaps between items)
+	grid-template-area: WATCH THE VIDEO
+
+	justify-content: end; (horizontal axis)
+	align-content         (vertical axis)
+	height: 100vh;
+
+	justify-items: center; (items will line with enter of their COLUMNS)
+	align-items: center; (items centered with their ROW)
+
+Grid Items example 1:
+	grid-column-start: 1;
+	grid-column-end: 3;   This will span two columns (3-1=2)
+Grid Items example 2:
+	grid-column-start: 1; (start at beginning, column 1)
+	grid-column-end: -1; (end at last column)
+Grid Items example 3:
+	grid-column: span 2; (span 2 columns)
+Grid Items example 4:
+	grid-row: span 2; (takes up 2 rows)

@@ -1,0 +1,193 @@
+<style>
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color:red;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h5 {
+  font-size: 19px;
+}
+
+footer {
+  font-size: 12px;
+}
+/* end of style reset
+
+/*========================================
+  index.html specific stylings
+=========================================*/
+#index-body {
+    background: url("images/draw.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+}
+
+#index-hero {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-family: 'Shadows Into Light Two', cursive;
+  text-align: center;
+}
+
+.flexbox-parent {
+  display: flex;
+  justify-content:space-between;
+  height:500px;
+  width:100%;
+}
+
+.flexchild {
+  height: 40%;
+  width: 35%;
+  background-color: green;
+}
+.flexchild #hiragana {
+  background-color: green;
+}
+#hiragana {
+  max-width: 100%;
+  max-height: 40%;
+}
+#katakana {
+  max-width: 100%;
+  max-height: 40%;
+}
+/*=========================================
+  layout.html styling
+==========================================
+  nav styling
+  ========================================*/
+.nav-container {
+  height: 175px;
+  width: 100%;
+  background-image: url("images/j_travel.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.backbar {
+  width = 100px;
+  height = 200px;
+  text-align: left;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.backbar a {
+  text-decoration: none;
+  font-size: 10px;
+}
+/*===========================================
+  container stylings
+============================================*/
+.main-container {
+  width:100%;
+  height:100%;
+  margin:0 0 0 0;
+  background-color: red;
+  text-align: center;
+}
+
+.lessons-container {
+}
+
+.show {
+  display: inline-block;
+  width:150px;
+  height:250px;
+  float:left;
+  background-color: yellow;
+}
+.lessons {
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 0 0 0 0;
+  background-color: green;
+}
+.banner {
+  width:100%;
+  height:100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: blue;
+  background-image: url("images/banner.png");
+  background-size: auto;
+}
+.upright {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+/*===========================================
+  tiles
+============================================*/
+.tiles {
+  display: inline-block;
+}
+/*============================================
+ Footer styling
+ ===========================================*/
+ footer {
+   text-align: center;
+ }
+ footer a {
+   display:inline-block;
+ }
+</style>

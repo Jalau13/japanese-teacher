@@ -1,0 +1,50 @@
+<!DOCTYPE>
+
+<html lang="en">
+<!-- Head information -->
+    <head>
+      {% block metadata %}
+      {% endblock %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Custom brushstroke font -->
+        <link rel="stylesheet" href="/static/kashima_demo.otf">
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+        <!-- Font for Hiragana -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap">
+        <!--Font for header -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light+Two&display=swap">
+        <!-- Mansalva font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap">
+
+        <title>Learning Japanese: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+      <!-- Top section so user can go back a page -->
+      <nav class ="nav-container">
+        <a class="logo" href="/"><h3>日本語</h3></a>
+        <div id="linkgroup">
+          <a class="link hiralink" href="{{url_for ('hiragana')}}"><h4>Hiragana</h4></a>
+          <a class="link katalink" href="{{url_for ('katakana')}}"><h4>Katakana</h4></a>
+          <a class="link quizzerlink" href="{{url_for ('quizzer')}}"><h4>Quizzer</h4></a>
+      </div>
+      </nav>
+
+      <!-- Other information to be filled in from other templates -->
+      {% block main %}
+      {% endblock %}
+      <!-- End of information from other templates -->
+
+      <!-- Footer section -->
+      <footer>
+        <p>This site was created as a project for Harvard's CS50: Intro to Computer Science Class.
+          Click <a href="about.html">here</a> to learn more!</p>
+      </footer>
+
+    </body>
+  </html>

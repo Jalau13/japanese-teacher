@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Hiragana Index
+{% endblock %}
+
+{% block main %}
+<!-- Main header -->
+
+<section class="main-container">
+  <h2 class="title">Hiragana Lesson: The Base 46</h2>
+    {% for i in range(groups) %}
+      <form class="show" action="{{url_for ('hirafirst')}}" method="post">
+        <button id="h-banner" class="banner" type="submit" name="group" value='{{i}}'>
+          <h3 class="number">{{i + 1}}</h3>
+          <h4><span class="upright">{{words[i][i]}}<br> Group<br>  of<br>Characters</span></h4></button>
+      </form>
+    {% endfor %}
+
+</section>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE>
+
+<html lang="en">
+<!-- Head information -->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="static/redo.css" >
+        <!-- Font for Hiragana -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap">
+        <!--Font for header -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light+Two&display=swap">
+        <title>Learning Japanese: Home</title>
+    </head>
+
+<!-- Begin body -->
+  <body id="index-body">
+    <!-- Main header -->
+    <section id="index-hero">
+      <h1>Learning Japanese </h1>
+      <h2>Choose your track</h2>
+    </section>
+
+    <!-- Main Body -->
+    <section class="flexbox-parent">
+      <!-- Hiragana section -->
+      <a href={{url_for ('hiragana')}}><section class="flexchild">
+        <h3>Hiragana</h3>
+        <h5>The building blocks of the Japanese writing system</h5>
+        <img id="hiragana" src="static/images/hiragana2.png" alt="Hiragana image">
+      </section></a>
+
+      <!-- Katakana section -->
+      <a href={{url_for ('katakana')}}><section class="flexchild">
+        <h3>Katakana</h3>
+        <h5>The second group of letters in the Japanese writing system</h5>
+        <img width="100%" id="katakana" src="static/images/katakana.png" alt="Katakana image">
+      </section></a>
+    </section><br><br><br>
+
+    <!-- Footer section -->
+    <footer>
+      <p>This site was created as a project for Harvard's CS50: Intro to Computer Science Class.
+        Click <a href="about.html">here</a> to learn more!</p>
+      <p class="copyright">Background image is by Kevin Whipple / © Culture Trip</p>
+    </footer>
+</html>
